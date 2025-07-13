@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌈 Mood Calendar – July 2025</h1>
+
+  <div class="controls">
+    <button id="darkToggle">🌓 Toggle Dark Mode</button>
+    <button id="resetBtn">🔄 Reset Calendar</button>
+    <button id="statsBtn">📊 View Stats</button>
+  </div>
+
+  <div class="header">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+  <div id="calendar"></div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="mood-picker" id="moodPicker">
+    <h3>Select your mood</h3>
+    <div>
+      <span data-emoji="😄">😄</span>
+      <span data-emoji="😢">😢</span>
+      <span data-emoji="😡">😡</span>
+      <span data-emoji="😌">😌</span>
+      <span data-emoji="😰">😰</span>
+    </div>
+  </div>
+
+  <div class="stats-modal" id="statsModal">
+    <h3>Mood Stats (July 2025)</h3>
+    <ul id="statsList"></ul>
+    <button onclick="closeStats()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
